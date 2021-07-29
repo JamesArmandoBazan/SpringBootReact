@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react';
-import logo from './logo.svg';
 import './App.css';
-import {Title} from "./models/types";
+import Navigation from "./components/navigation/Navigation";
 
 export const App: React.FC = () => {
     const [error, setError] = useState(null);
@@ -34,7 +33,7 @@ export const App: React.FC = () => {
     } else {
         return (
             <div className="App">
-                {displayText}
+                <Navigation />
             </div>
         );
     }
